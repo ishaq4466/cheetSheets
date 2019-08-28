@@ -1,0 +1,77 @@
+# Git basic
++============================================================================+
+| **Working directory --> Staging area --> Local repo ======> Remote repo**  |
++============================================================================+
+
+1. git status //showing all **modified and untracked** file in the repo
+
+2. git add . // adding all files which are added and modified to the staging area
+
+3. git commit -m "commit message"  // committing all the files into local repo from the staging area
+
+4. git commit -am "Commit without adding to staging" // all the **modified files only** are commit without adding them to staging area
+
+5. git log --oneline --decorate --color // showing all the logs in oneline with HEAD position 
+
+# Checkout 
+
+1. git checkout
+
+* showing all the modified file names in the **working directory**
+* Also it shows all the modified and added files in the **staging area** 
+
+2. git diff --color <filename>   // showing all the **changes done to a file**
+
+# Resetting/Rolling-back the changes (Playing with HEAD)
+
+1. Revert back the modified files/file to their original state or to **last commit state** in Working Directory 
+```
+git checkout . or git checkout <filename>
+```
+
+2. Reverting the files from staging area to **working directoty or last commit**
+```
+git reset HEAD 
+```
+
+# Branches
+
+1. git checkout -b new // creating and checking out new branch
+
+2. git checkout -b new <sha-id> // creating a branch from **commit id**
+
+3. git branch 			// showing the branch
+4. git branch -r 		//**showing all remote branches** -a all for branches
+5. git branch -D branch_name // deleting branch
+6. git branch 
+
+# [Reflogging](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog)
+
+* Git keeps track of updates to the tip of branches using a mechanism called reference logs, or "reflogs."
+* Reflogs track when Git refs were updated in the local repository. 
+* In addition to branch tip reflogs, a special reflog is maintained for the **Git stash**.
+* Reflogs are stored in directories under the local repository's .git directory.
+* git reflog directories can be found at .git/logs/refs/heads/., .git/logs/HEAD, and also .git/logs/refs/stash if the git stash has been used on the repo
+* **git reflog** can be used for **Redoing after undo** like if we hard reset 
+
+# [Stashing](https://www.atlassian.com/git/tutorials/saving-changes/git-stash#stashing-your-work)
+
+* git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on
+* Stashing is handy if you need to quickly switch context and work on something else, 
+  but you're mid-way through a code change and aren't quite ready to commit.
+* Note that the stash is local to your Git repository; stashes are not transferred to the server when you push.
+* Also remember, by default Git won't stash **changes made to untracked or ignored files.**
+
+1. git stash save or git stash save -u or git stash save -a //
+2. git stash show
+3. 	
+
+
+ssh//git@github.com/ishaq4466/
+
+
+
+
+
+
+
