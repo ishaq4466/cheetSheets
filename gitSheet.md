@@ -13,6 +13,8 @@
 
 5. git log --oneline --decorate --color // showing all the logs in oneline with HEAD position 
 
+6. git log -p -1 --color  	// shows the changes in files in the last commit
+
 # Checkout 
 
 1. git checkout
