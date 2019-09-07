@@ -44,6 +44,7 @@ ansible host1 -m setup
 ansible host1 -b -m yum -a "name=httpd state=latest" 
 ansible host1 -b -m service -a "name=httpd state=started"
 # -b flag means become a su to install the package
+ansible host1 -b -m yum -a "name=httpd state=absent" # It will going to insinstal the httpd service
 ```
 * If we run the same  module again and again on the host, there will be no change on host since the desired 
 state is already achieved.
@@ -81,9 +82,6 @@ web.yml
 * ansible -i inv1 web.yml --check # --check flag can be used to dry-run the ansible playbook
 * If a playbook fails it generates a **retry file** for that playbook which can be run later
 
---- 
-- host: webserver
-  become
 
 
 
