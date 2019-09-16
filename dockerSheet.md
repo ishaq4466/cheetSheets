@@ -3,14 +3,14 @@
 ## Cmds related to CONTAINERS AND IMAGES
 ```
 docker ps -a
-
+docker ps -q -n 1 # getting the first container id
 docker run -p 4000:80 -d hello-node:1.0
 mapping pod 4000 of local host with port 80 of container 
 -d: run container in background
 
 docker run -p 4001:80 -d --name container2 $IMG_NAME
 
-docker log container1
+docker log -f container1
 
 docker rmi -f image-name
 
@@ -72,7 +72,7 @@ docker swarm leave --force
 
 ### Getting the instance IP addr 
 ```
-$docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $INSTANCE_ID
+$ docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $INSTANCE_ID
 ```
 
 ### List all the binding ports
