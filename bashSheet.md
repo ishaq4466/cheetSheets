@@ -12,7 +12,7 @@ X11Forwarding yes # for X11 forwarding
 
 ```
 
-
+3. ssh -o "StrictHostKeyChecking no" user@ip
 
 # Centos
 ```
