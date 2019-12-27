@@ -66,7 +66,24 @@ git reset HEAD
 
 1. git stash save or git stash save -u or git stash save -a //
 2. git stash show
-3. 	
+
+# [Merge And Conflict](https://www.git-tower.com/learn/git/faq/solve-merge-conflicts)
+
+* Conflict suitations normally happens when the same file has been modified by two diff. users(dev) co-incidently
+* By Merging these changes, we are knowing the "single source of truth" for that piece of code or file.
+
+1. git status # will show the conflicting file name to be merged 
+2. git checkout --ours <file-name> # keeping the modified changes by our side 
+3. git checkout --theirs <file-name> # keeping the modified changes by other side 
+4. git commit -am "Conflict resolved" # After resolving the confilct ,merging it by commiting
+
+
+
+
+
+
+
+
 
 
 ssh//git@github.com/ishaq4466/
