@@ -1,3 +1,12 @@
+Table of Contents
+===================
+1. Users and Groups
+
+
+
+
+
+
 1. Check the groups
 ```
 cat /ect/groups
@@ -57,22 +66,3 @@ sudo dnf upgrade
 sudo groupadd docker
 
 ```
-
-
-
-
---env JAVA_OPTS="-Xmx256m -XX:MaxPermSize=512m" jenkins
-docker run -itd -v data:/var/jenkins_home/ -p 8080:8080 -p 50000:50000 --name jenkins --env JAVA_OPTS="-Xms256 -Xmx256m -Djenkins.install.runSetupWizard=false" jenkinsci/blueocean
-
-docker run -itd -p 3000:3000 --name gitea gitea/gitea
- --mount type=bind,source="$(pwd)"/target,target=/app
-
-all jenkins JAVA_ARGS parameters are stored in /ect/default/jenkins
-docker run -itd --mount type=bind,source="data",target=/var/jenkins_home/ -p 8080:8080 -p 50000:50000 --name jenkins --env JAVA_OPTS="-Djenkins.install.runSetupWizard=false" jenkinimg
-
-docker cp mycontainer:/foo.txt foo.txt
-docker cp src/. mycontainer:/targe
-
-
-
-54023d7a1d747112785826016c975fec6722f71a
