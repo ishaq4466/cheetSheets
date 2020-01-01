@@ -68,6 +68,7 @@ Table of conntent:
 ![Merge-conflict-2](merge-conflict-2.png)
 * Conflict suitations normally happens when the **same line/s of same the filename** has been modified by two diff. users(dev)eloper) co-incidently
 * By Merging these changes, we are knowing the "single source of truth" for that piece of code or file by eithering discarding "our" changes or "thier" changes.
+* Sorting out the merge-conflict condition
 ```
  git status # will show the conflicting file name to be merged 
  git checkout --ours <file-name> # keeping our changes and discarding the other 
@@ -83,21 +84,23 @@ Table of conntent:
 
 ### Resetting/Rolling-back the changes (Playing with HEAD Pointer)
 
-1. Revert back the modified files/file to their original state or to **last commit state** in Working Directory 
+* Revert back the modified files/file to their original state or to **last commit state** in Working Directory 
 ```
 git checkout . or git checkout <filename>
 ```
-2. Reverting the files from staging area to **working directoty or last commit**
+* Reverting the files from staging area to **working directoty or last commit**
 ```
 git reset HEAD 
 ```
 
-3. Reverting the file changes "between two commits"
+* Reverting the file changes "between two commits"
+Some times it might happen we want to revert back the changes to the previous commit or to a specific commit state.
+The below image illust the scenerio:  
 ![Revert](revert.png)
 
 ```
 git log -p -2 FILE1.txt # see the changes done in file1.txt in last 2 commits and getting the hash value for the desired
-git revert <HASH-value> 
+git revert <SHA2>
 git checkout --their FILE1.txt #solving the merge and conflict
 git commit -m "Chnges reverted w.r.t last commit"
 git push origin 
