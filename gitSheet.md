@@ -1,13 +1,13 @@
 Table of conntent:
 ===================
-1. [Git basic](#1git-basic-flow)
+1. [Git basic](#1git-basic-Archi)
 2. [Checkout](#2Checkout)
 3. [Branch](#3branches)
 4. [Reflogging](#4Reflogging)
 5. [Stashing](#5Stashing)
 6. [\*\*Merge and Conflict](#6Merge-And-Conflict)
 
-## 1.Git basic flow
+## [1.Git basic Archi.](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2016/11/Git-Architechture-Git-Tutorial-Edureka-2-768x720.png)
 +============================================================================+
 | **Working directory --> Staging area --> Local repo ======> Remote repo**  |
 +============================================================================+
