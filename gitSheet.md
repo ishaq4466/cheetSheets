@@ -1,17 +1,15 @@
 Table of conntent:
 ===================
-1. [Git basic](#1git-basic-Archi)
+1. [Git basic](#1git-basic-Archi.)
 2. [Checkout](#2Checkout)
 3. [Branch](#3branches)
 4. [Reflogging](#4Reflogging)
 5. [Stashing](#5Stashing)
 6. [\*\*Merge and Conflict](#6Merge-And-Conflict)
 
-## [1.Git basic Archi.](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2016/11/Git-Architechture-Git-Tutorial-Edureka-2-768x720.png)
-+============================================================================+
-| **Working directory --> Staging area --> Local repo ======> Remote repo**  |
-+============================================================================+
+## 1.Git basic Archi.
 
+![Git Architecture](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2016/11/Git-Architechture-Git-Tutorial-Edureka-2-768x720.png)
 1. git status //showing all **modified and untracked** file in the repo
 
 2. git add . // adding all files which are added and modified to the staging area
@@ -24,7 +22,7 @@ Table of conntent:
 
 6. git log -p -1 --color  	// shows the changes in files in the last commit
 
-# 2.Checkout 
+## 2.Checkout 
 
 1. git checkout
 
@@ -34,7 +32,7 @@ Table of conntent:
 2. git diff --color <filename>   // showing all the **changes done to a file**
 
 
-# 3.Branches
+## 3.Branches
 
 1. git checkout -b new // creating and checking out new branch
 2. git checkout -b new <sha-id> // creating a branch from **commit id**
@@ -44,7 +42,7 @@ Table of conntent:
 6. git branch 
 7. git push origin --delete dev # deleting a remote branch from local 
 
-# [4.Reflogging](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog)
+## [4.Reflogging](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog)
 
 * Git keeps track of updates to the tip of branches using a mechanism called reference logs, or "reflogs."
 * Reflogs track when Git refs were updated in the local repository. 
@@ -53,7 +51,7 @@ Table of conntent:
 * git reflog directories can be found at .git/logs/refs/heads/., .git/logs/HEAD, and also .git/logs/refs/stash if the git stash has been used on the repo
 * **git reflog** can be used for **Redoing after undo** like if we hard reset 
 
-# [5.Stashing](https://www.atlassian.com/git/tutorials/saving-changes/git-stash#stashing-your-work)
+## [5.Stashing](https://www.atlassian.com/git/tutorials/saving-changes/git-stash#stashing-your-work)
 
 * git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on
 * Stashing is handy if you need to quickly switch context and work on something else, 
@@ -64,7 +62,7 @@ Table of conntent:
 1. git stash save or git stash save -u or git stash save -a //
 2. git stash show
 
-# [6.Merge And Conflict](https://www.git-tower.com/learn/git/faq/solve-merge-conflicts)
+## [6.Merge And Conflict](https://www.git-tower.com/learn/git/faq/solve-merge-conflicts)
 
 * Conflict suitations normally happens when the **same line/s of same the filename** has been modified by two diff. users(dev)eloper) co-incidently
 * By Merging these changes, we are knowing the "single source of truth" for that piece of code or file by eithering discarding 
@@ -77,7 +75,7 @@ our changes or thier changes.
 
 
 
-# Resetting/Rolling-back the changes (Playing with HEAD Pointer)
+## Resetting/Rolling-back the changes (Playing with HEAD Pointer)
 
 1. Revert back the modified files/file to their original state or to **last commit state** in Working Directory 
 ```
