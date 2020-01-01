@@ -83,11 +83,18 @@ our changes or thier changes.
 ```
 git checkout . or git checkout <filename>
 ```
-
 2. Reverting the files from staging area to **working directoty or last commit**
 ```
 git reset HEAD 
 ```
+
+3. Reverting the file changes "between two commits"
+![File revert](https://pasteboard.co/INXRxau.pngs)
+
+
+
+
+
 
 
 
