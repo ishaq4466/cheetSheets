@@ -90,7 +90,8 @@ git reset HEAD
 
 3. Reverting the file changes "between two commits"
 
-![File revert](https://drive.google.com/file/d/1n9qJMgzCDujUFdijujGJZ7U4i31ryYmG/view)
+
+![Revert](https://drive.google.com/file/d/1n9qJMgzCDujUFdijujGJZ7U4i31ryYmG/view)
 
 
 
