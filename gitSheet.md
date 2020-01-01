@@ -12,7 +12,7 @@ Table of conntent:
 ![Git Architecture](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2016/11/Git-Architechture-Git-Tutorial-Edureka-2-768x720.png)
 1. git status //showing all **modified and untracked** file in the repo
 
-2. git add . /// adding all files which are added and modified to the staging area
+2. git add . // adding all files which are added and modified to the staging area
 
 3. git commit -m "commit message"  // committing all the files into local repo from the staging area
 
