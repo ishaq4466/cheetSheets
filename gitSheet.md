@@ -64,6 +64,8 @@ Table of conntent:
 
 ### [6.Merge And Conflict](https://www.git-tower.com/learn/git/faq/solve-merge-conflicts)
 
+![Merge-conflict](merge-conflict.png)
+![Merge-conflict-2](merge-conflict-2.png)
 * Conflict suitations normally happens when the **same line/s of same the filename** has been modified by two diff. users(dev)eloper) co-incidently
 * By Merging these changes, we are knowing the "single source of truth" for that piece of code or file by eithering discarding 
 our changes or thier changes.
