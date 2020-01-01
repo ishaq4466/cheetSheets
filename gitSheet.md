@@ -1,8 +1,8 @@
 Table of conntent:
 ===================
-1. [Git basic](#1git-basic-Archi.)
+1. [Git Archi.](#1git-basic-Archi.)
 2. [Checkout](#2Checkout)
-3. [Branch](#3branches)
+3. [Branching](#3branching)
 4. [Reflogging](#4Reflogging)
 5. [Stashing](#5Stashing)
 6. [\*\*Merge and Conflict](#6Merge-And-Conflict)
@@ -32,7 +32,7 @@ Table of conntent:
 2. git diff --color <filename>   // showing all the **changes done to a file**
 
 
-## 3.Branches
+## 3.Branching
 
 1. git checkout -b new // creating and checking out new branch
 2. git checkout -b new <sha-id> // creating a branch from **commit id**
