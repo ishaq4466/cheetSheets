@@ -67,14 +67,13 @@ Table of conntent:
 ![Merge-conflict](merge-conflict.png)
 ![Merge-conflict-2](merge-conflict-2.png)
 * Conflict suitations normally happens when the **same line/s of same the filename** has been modified by two diff. users(dev)eloper) co-incidently
-* By Merging these changes, we are knowing the "single source of truth" for that piece of code or file by eithering discarding 
-our changes or thier changes.
-
-1. git status # will show the conflicting file name to be merged 
-2. git checkout --ours <file-name> # keeping our changes and discarding the other 
-3. git checkout --theirs <file-name> # keeping the other changes and discarding our change 
-4. git commit -am "Conflict resolved" # After resolving the confilct ,merging it by commiting
-
+* By Merging these changes, we are knowing the "single source of truth" for that piece of code or file by eithering discarding "our" changes or "thier" changes.
+```
+ git status # will show the conflicting file name to be merged 
+ git checkout --ours <file-name> # keeping our changes and discarding the other 
+ git checkout --theirs <file-name> # keeping the other changes and discarding our change 
+ git commit -am "Conflict resolved" # After resolving the confilct ,merging it by commiting
+```
 ### [7.BFG](https://github.com/IBM/BluePic/wiki/Using-BFG-Repo-Cleaner-tool-to-remove-sensitive-files-from-your-git-repo)
 
 * Sometimes we might added some large files or some sensitive files to our git repo and pushed it to the remote repo.
@@ -94,7 +93,15 @@ git reset HEAD
 ```
 
 3. Reverting the file changes "between two commits"
+![Revert](revert.png)
 
+```
+git log -p -2 FILE1.txt # see the changes done in file1.txt in last 2 commits and getting the hash value for the desired
+git revert <HASH-value> 
+git checkout --their FILE1.txt #solving the merge and conflict
+git commit -m "Chnges reverted w.r.t last commit"
+git push origin 
+```
 
 
 
