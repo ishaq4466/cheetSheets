@@ -33,8 +33,8 @@
 	kubectl create clusterrolebinding pv-test --clusterrole=pv-reader --serviceaccount=web:default
 
 26. k config view # View the kubeconfig content
-27. k run nginx --image=nginx --replicas=2
-
+27. k run nginx --image=nginx --replicas=2 
+28. k run busybox --image=busybox --Restart Never -- /bin/sleep 9000000 #Run a busybox Pod with sleep as cmd 
 
 
 
