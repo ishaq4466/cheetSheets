@@ -1,13 +1,13 @@
 Table of conntent:
 ===================
-1. [Git basic](#1.Git-basic)
-2. [Checkout](#2.Checkout)
-3. [Branch](#3.Resetting/Rolling-back-the-changes-(Playing-with-HEAD-Pointer))
-4. [Reflogging](#4.Reflogging)
-5. [Stashing](#5.Stashing)
-6. [Merge and Conflict](#6.Merge-And-Conflict)
+1. [Git basic](#1Git-basic)
+2. [Checkout](#2Checkout)
+3. [Branch](#3branches)
+4. [Reflogging](#4Reflogging)
+5. [Stashing](#5Stashing)
+6. [Merge and Conflict](#6Merge-And-Conflict)
 
-# 1.Git basic flow
+## 1.Git basic flow
 +============================================================================+
 | **Working directory --> Staging area --> Local repo ======> Remote repo**  |
 +============================================================================+
@@ -74,6 +74,7 @@ our changes or thier changes.
 2. git checkout --ours <file-name> # keeping our changes and discarding the other 
 3. git checkout --theirs <file-name> # keeping the other changes and discarding our change 
 4. git commit -am "Conflict resolved" # After resolving the confilct ,merging it by commiting
+
 
 
 # Resetting/Rolling-back the changes (Playing with HEAD Pointer)
