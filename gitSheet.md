@@ -1,11 +1,11 @@
 Table of conntent:
 ===================
-1. [Git basic](#1Git-basic)
+1. [Git basic](#1git-basic-flow)
 2. [Checkout](#2Checkout)
 3. [Branch](#3branches)
 4. [Reflogging](#4Reflogging)
 5. [Stashing](#5Stashing)
-6. [Merge and Conflict](#6Merge-And-Conflict)
+6. [\*\*Merge and Conflict](#6Merge-And-Conflict)
 
 ## 1.Git basic flow
 +============================================================================+
