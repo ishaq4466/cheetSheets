@@ -75,7 +75,12 @@ our changes or thier changes.
 3. git checkout --theirs <file-name> # keeping the other changes and discarding our change 
 4. git commit -am "Conflict resolved" # After resolving the confilct ,merging it by commiting
 
+### [7.BFG](https://github.com/IBM/BluePic/wiki/Using-BFG-Repo-Cleaner-tool-to-remove-sensitive-files-from-your-git-repo)
 
+* Sometimes we might added some large files or some sensitive files to our git repo and pushed it to the remote repo.
+* Though we can remove that file and put the entry in the .gitignore file for such file extension. But still we might find that file in our git commit history on the Remote Repo. 
+* In order to remove that file permenantly from the repo commit history, we can either make use of 
+**git filter-branch** or a super cool repo cleaner tool called **"BFG"** 
 
 ### Resetting/Rolling-back the changes (Playing with HEAD Pointer)
 
@@ -90,8 +95,6 @@ git reset HEAD
 
 3. Reverting the file changes "between two commits"
 
-
-![Revert](https://drive.google.com/file/d/1n9qJMgzCDujUFdijujGJZ7U4i31ryYmG/view)
 
 
 
