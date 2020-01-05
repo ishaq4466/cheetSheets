@@ -10,18 +10,19 @@ Table of conntent:
 ### 1.Git basic Archi.
 
 ![Git Architecture](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2016/11/Git-Architechture-Git-Tutorial-Edureka-2-768x720.png)
-1. git status //showing all **modified and untracked** file in the repo
+1. git status #showing all **modified and untracked** file in the repo
 
-2. git add . /// adding all files which are added and modified to the staging area
+2. git add . # adding all files which are added and modified to the staging area
 
-3. git commit -m "commit message"  // committing all the files into local repo from the staging area
+3. git commit -m "commit message"  # committing all the files into local repo from the staging area
 
-4. git commit -am "Commit without adding to staging" // all the **modified files only** are commit without adding them to staging area
+4. git commit -am "Commit without adding to staging" # all the **modified files only** are commit without adding them to staging area
 
-5. git log --oneline --decorate --color // showing all the logs in oneline with HEAD position 
+5. git log --oneline --decorate --color # showing all the logs in oneline with HEAD position 
 
-6. git log -p -1 --color  	// shows the changes in files in the last commit
+6. git log -p -1 --color  	# shows the changes in files in the last commit
 
+&. git config --list # getting all the configured username and password
 ### 2.Checkout 
 
 1. git checkout
@@ -29,16 +30,16 @@ Table of conntent:
 * showing all the modified file names in the **working directory**
 * Also it shows all the modified and added files in the **staging area** 
 
-2. git diff --color <filename>   // showing all the **changes done to a file**
+2. git diff --color <filename>   # showing all the **changes done to a file**
 
 
 ### 3.Branching
 
-1. git checkout -b new // creating and checking out new branch
-2. git checkout -b new <sha-id> // creating a branch from **commit id**
-3. git branch 			// showing the branch
-4. git branch -r 		//**showing all remote branches** -a all for branches
-5. git branch -D branch_name // deleting a local repo branch
+1. git checkout -b new # creating and checking out new branch
+2. git checkout -b new <sha-id> # creating a branch from **commit id**
+3. git branch 			# showing the branch
+4. git branch -r 		# **showing all remote branches** -a all for branches
+5. git branch -D branch_name # deleting a local repo branch
 6. git branch 
 7. git push origin --delete dev # deleting a remote branch from local 
 
