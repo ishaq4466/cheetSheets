@@ -6,7 +6,8 @@ Table of conntent:
 4. [Reflogging](#4Reflogging)
 5. [Stashing](#5Stashing)
 6. [\*\*Merge and Conflict](#6Merge-And-Conflict)
-
+7. [BFG](#7bfg)
+8. [Cherry-Picking](#)
 ### 1.Git basic Archi.
 
 ![Git Architecture](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2016/11/Git-Architechture-Git-Tutorial-Edureka-2-768x720.png)
@@ -76,6 +77,7 @@ Table of conntent:
  git checkout --theirs <file-name> # keeping the other changes and discarding our change 
  git commit -am "Conflict resolved" # After resolving the confilct ,merging it by commiting
 ```
+
 ### [7.BFG](https://github.com/IBM/BluePic/wiki/Using-BFG-Repo-Cleaner-tool-to-remove-sensitive-files-from-your-git-repo)
 
 * Sometimes we might added some large files or some sensitive files to our git repo and pushed it to the remote repo.
@@ -106,6 +108,13 @@ git checkout --their FILE1.txt #solving the merge and conflict
 git commit -m "Chnges reverted w.r.t last commit"
 git push origin 
 ```
+
+### [8.Cherry-picking](https://www.devroom.io/2010/06/10/cherry-picking-specific-commits-from-another-branch/)
+
+* Cherry-picking is one of the most powerfull feature of git which **allows one to only pick certain commits
+from other branch and merge it with the corresponding desired branch**
+
+* Cherry-picking allows us to only merge the specific file changes in two different branches, leaving the other files unchanged in other branch.
 
 
 
